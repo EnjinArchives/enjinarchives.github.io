@@ -2,10 +2,11 @@
 <html lang="en">
 <style>
 body {
-  background-image: linear-gradient(to top, #fafafa 50%, transparent 50%), linear-gradient(to left, #fafafa 50%, transparent 50%);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 2px 2px;
+  background-image: grid(10px / 10px) repeat(both);
+  grid-template-columns: 1px 1px;
+  background-color: #f8f8f8;
+  grid-gap: 1px;
+  background-image: linear-gradient(to right, rgba(230, 230, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%, rgba(230, 230, 255, 0.1) 100%);
 }
 </style>
 
