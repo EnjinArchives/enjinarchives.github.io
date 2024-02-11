@@ -85,7 +85,12 @@
 
 
 
-<footer id="myFooter"><style>footer {
+<footer id="myFooter"><style>body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto; /* Content, footer */
+}
+    footer {
   position: absolute; /* Ensures positioning at bottom */
   left: 0;
   right: 0;
