@@ -84,12 +84,19 @@
 
 
 
-<footer id="myFooter"><style>body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: 1fr auto; /* Content, footer */
+<footer id="myFooter">
+    <style>
+        body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure viewport height */
 }
-    footer {
+
+main { /* Target your main content area */
+  flex: 1; /* Fill remaining space */
+}
+
+footer {
   position: absolute; /* Ensures positioning at bottom */
   left: 0;
   right: 0;
@@ -98,7 +105,7 @@
   color: #808080; /* Slightly gray */
   padding: 10px; /* Optional padding */
   background-color: #ffffff; /* Optional background color */
-  margin-top: auto
+  margin-top: auto; /* Pushes footer to bottom */
 }
 </style><small>
     Disclaimer: Information on this page is based on publicly available data and may not be entirely accurate or complete.
