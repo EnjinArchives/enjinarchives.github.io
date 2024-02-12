@@ -53,11 +53,22 @@ body {
 
 
      
-<footer id="myFooter"><style>footer {
-  position: absolute; /* Ensures positioning at bottom */
+<footer id="myFooter"><style>body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Occupies remaining space */
+}
+
+footer {
+  /* Style your footer here */
+  position: relative; /* Avoid absolute positioning */
+  margin-top: auto; /* Pushes footer to bottom */
   left: 0;
   right: 0;
-  bottom: 0;
   text-align: center; /* Center text */
   color: #808080; /* Slightly gray */
   padding: 10px; /* Optional padding */
