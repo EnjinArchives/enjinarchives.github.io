@@ -86,11 +86,20 @@
 
 
 
-<footer id="myFooter">
-    <style>
+<footer id="myFooter"><style>body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Occupies remaining space */
+}
+
 footer {
-  position: absolute;
-  bottom: 0;
+  /* Style your footer here */
+  position: relative; /* Avoid absolute positioning */
+  margin-top: auto; /* Pushes footer to bottom */
   left: 0;
   right: 0;
   text-align: center; /* Center text */
